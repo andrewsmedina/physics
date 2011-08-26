@@ -6,6 +6,6 @@ class Sprite(object):
         self.x_velocity = x_velocity
         self.y_velocity = y_velocity
 
-    def step(self, ):
+    def step(self):
         self.x += self.x_velocity
         self.y += self.y_velocity
