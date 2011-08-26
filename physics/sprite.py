@@ -1,4 +1,5 @@
 class Sprite(object):
 
-    def __init__(self, x):
+    def __init__(self, x, y):
         self.x = x
+        self.y = y
