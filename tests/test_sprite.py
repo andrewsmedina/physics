@@ -13,3 +13,11 @@ class SpriteTestCase(TestCase):
 
     def test_sprite_should_have_y_attribute(self):
         self.assertEqual(15, self.sprite.y)
+
+    def test_step_should_increment_x_sprite_position(self):
+        self.sprite.step(x_velocity=1)
+        self.assertEqual(11, self.sprite.x)
+
+    def test_step_should_increment_y_sprite_position(self):
+        self.sprite.step(y_velocity=1)
+        self.assertEqual(16, self.sprite.y)
